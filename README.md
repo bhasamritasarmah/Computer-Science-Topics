@@ -13,3 +13,11 @@ Computer Science is a dynamic and ever-changing field. But like any other field,
 **Book Name:** Operating System Principles by Abraham Silberschatz, Peter Baer Galvin, and Greg Gagne; Wiley; Seventh Edition (Wiley Student Edition); Reprint: 2018; ISBN: 978-81-265-0962-7
 
 **Book Format:** I have the *physical* book. Hence, it is not available in this repository.
+
+# Online Resources Used
+
+## Jira and Agile Methodology
+
+**Video Name:** Jira Tutorial for Beginners by Intellipaat
+
+**Video Link:** https://www.youtube.com/watch?v=uM_m6EzMg3k
