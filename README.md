@@ -33,3 +33,12 @@ Computer Science is a dynamic and ever-changing field. But like any other field,
 **Video 2 Link:** https://www.youtube.com/watch?v=8eVXTyIZ1Hs
 
 **Video 2 Length:** 00:06:22
+
+<br>
+
+**Video 3 Name:** What is Scrum?
+
+**Video 3 Link:** https://www.youtube.com/watch?v=SWDhGSZNF9M
+
+**Video 3 Length:** 00:19:35
+
