@@ -50,5 +50,13 @@ Computer Science is a dynamic and ever-changing field. But like any other field,
 
 **Video 4 Length:** 00:13:38
 
+<br>
+
+**Video 5 Name:** Sprint Planning with Jira, Part 2
+
+**Video 5 Link:** https://www.youtube.com/watch?v=94sqZadKOFI
+
+**Video 5 Length:** 00:34:34
+
 
 
