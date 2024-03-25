@@ -66,4 +66,18 @@ Computer Science is a dynamic and ever-changing field. But like any other field,
 
 **Video 6 Length:** 00:34:34
 
+<br>
 
+**Video 7 Name:** Agile Methodology and Frameworks
+
+**Video 7 Link:** https://www.youtube.com/watch?v=WjwEh15M5Rw
+
+**Video 7 Length:** 00:35:30
+
+## Documentation Used
+
+**Documentation Name:** Scrum Guide 2020
+
+**Documentation Format:** PDF included in this repository.
+
+**Documentation Length:** 14 pages
