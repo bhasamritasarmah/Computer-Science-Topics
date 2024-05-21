@@ -6,6 +6,8 @@ This repository contains the main points and question-answers from all the Compu
 
 Computer Science is a dynamic and ever-changing field. But like any other field, the fundamentals of this field too are non-changing. It is through the mastery of these fundamentals that we can hope to make a mark.
 
+
+
 # Operating System
 
 ## Books Used
@@ -15,6 +17,8 @@ Computer Science is a dynamic and ever-changing field. But like any other field,
 **Book Format:** I have the *physical* book. Hence, it is not available in this repository.
 
 **Book Length:** 896 pages 
+
+
 
 # Jira and Agile Methodology
 
@@ -81,3 +85,15 @@ Computer Science is a dynamic and ever-changing field. But like any other field,
 **Documentation Format:** PDF included in this repository.
 
 **Documentation Length:** 14 pages
+
+
+
+# COM Programming
+
+## Online Resources Used
+
+**Video Playlist Name:** Programming COM
+
+**Video Playlist Link:** https://www.youtube.com/watch?v=uj63IHSy4E8&list=PLAwDRnP3h7Yh-fUYFAq9k2wVb81dA5BYP
+
+**Video Playlist Length:** 12 hours (approx)
