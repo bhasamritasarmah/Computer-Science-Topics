@@ -20,6 +20,30 @@ Computer Science is a dynamic and ever-changing field. But like any other field,
 
 
 
+# C++ Programming
+
+## Books Used
+
+**Book Name:** The C++ Programming Language (4th edition) by Bjarne Stroustrup
+
+**Book Format:** PDF Format; included in this repository
+
+**Book Length:** 1372 pages
+
+
+
+# Compilers
+
+
+
+# Discrete Mathematics
+
+
+
+# Computer System Architecture and Organisation
+
+
+
 # Jira and Agile Methodology
 
 ## Online Resources Used
