@@ -34,6 +34,15 @@ Computer Science is a dynamic and ever-changing field. But like any other field,
 
 # Compilers
 
+## Books Used
+
+**Book Name:** Compilers: Principles, Techniques, and Tools (2nd Edition) by Alfred V Aho, Monica S Lam, Ravi Sethi, Jeffrey D Ullman
+
+**Book Format:** PDF Format; included in this repository
+
+**Book Length:** 1035 pages
+
+**Estimated Completion Date:** August 2026
 
 
 # Discrete Mathematics
