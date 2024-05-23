@@ -40,12 +40,23 @@ Computer Science is a dynamic and ever-changing field. But like any other field,
 
 **Book Format:** PDF Format; included in this repository
 
-**Book Length:** 1035 pages
+**Book Length:** 1060 pages
 
-**Estimated Completion Date:** August 2026
+**Estimated Completion Date:** January 2031
+
 
 
 # Discrete Mathematics
+
+## Books Used
+
+**Book Name:** Discrete Mathematics and its Applications (7th edition) by Kenneth H Rosen
+
+**Book Format:** PDF Format; included in this repository
+
+**Book Length:** 1092 pages
+
+**Estimated Completion Date:** March 2031
 
 
 
