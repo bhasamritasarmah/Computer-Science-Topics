@@ -151,3 +151,7 @@ Computer Science is a dynamic and ever-changing field. But like any other field,
 **Video Playlist Link:** https://www.youtube.com/watch?v=uj63IHSy4E8&list=PLAwDRnP3h7Yh-fUYFAq9k2wVb81dA5BYP
 
 **Video Playlist Length:** 12 hours (approx)
+
+**Start Date:** 21st May 2024
+
+**Estimated Completion Date:** 21st June 2024
