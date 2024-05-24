@@ -62,6 +62,16 @@ Computer Science is a dynamic and ever-changing field. But like any other field,
 
 # Computer System Architecture and Organisation
 
+## Books Used
+
+**Book Name:** Computer System Architecture (3rd edition) by M Morris Mano
+
+**Book Format:** PDF Format; included in this repository
+
+**Book Length:** 524 pages
+
+**Estimated Completion Date:** October 2027
+
 
 
 # Jira and Agile Methodology
