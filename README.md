@@ -156,6 +156,8 @@ Computer Science is a dynamic and ever-changing field. But like any other field,
 
 **Video Playlist Length:** 12 hours (approx)
 
+**Wikipedia Article Link:** https://en.wikipedia.org/wiki/Component_Object_Model
+
 **Start Date:** 21st May 2024
 
 **Estimated Completion Date:** 21st June 2024
