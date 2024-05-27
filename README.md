@@ -12,11 +12,15 @@ Computer Science is a dynamic and ever-changing field. But like any other field,
 
 ## Books Used
 
-**Book Name:** Operating System Principles by Abraham Silberschatz, Peter Baer Galvin, and Greg Gagne; Wiley; Seventh Edition (Wiley Student Edition); Reprint: 2018; ISBN: 978-81-265-0962-7
+**Book Name:** Operating System Concepts (Tenth Edition) by Abraham Silberschatz, Peter Baer Galvin, and Greg Gagne
 
-**Book Format:** I have the *physical* book. Hence, it is not available in this repository.
+**Book Format:** PDF Format; included in this repository
 
-**Book Length:** 896 pages 
+**Book Length:** 1304 pages 
+
+**Start Date:** 11th March 2024
+
+**Estimated Completion Date:** July 2032
 
 
 
