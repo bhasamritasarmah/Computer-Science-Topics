@@ -34,6 +34,10 @@ Computer Science is a dynamic and ever-changing field. But like any other field,
 
 **Book Length:** 1372 pages
 
+**Start Date:** 14th May 2024
+
+**Estimated Completion Date:** January 2026
+
 
 
 # Compilers
