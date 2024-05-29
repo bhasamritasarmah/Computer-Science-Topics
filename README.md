@@ -38,6 +38,8 @@ Computer Science is a dynamic and ever-changing field. But like any other field,
 
 **Estimated Completion Date:** January 2026
 
+**Rate of studying:** 3 pages per day for every working day (approx 22 working days in a month)
+
 
 
 # Compilers
