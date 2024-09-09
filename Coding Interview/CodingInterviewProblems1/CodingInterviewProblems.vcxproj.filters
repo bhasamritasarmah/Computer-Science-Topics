@@ -9,10 +9,19 @@
     <ClCompile Include="NaturalNumbersSumTest.cpp">
       <Filter>Test Files</Filter>
     </ClCompile>
+    <ClCompile Include="PairSumSequence.cpp">
+      <Filter>Code Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PairSumSequenceTest.cpp">
+      <Filter>Test Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="NaturalNumbersSum.h">
+      <Filter>Code Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PairSumSequence.h">
       <Filter>Code Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -26,5 +35,8 @@
     <Filter Include="Code Source Files">
       <UniqueIdentifier>{d2973ba4-7e7b-4a45-a96e-8644e753f50a}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
