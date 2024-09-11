@@ -5,7 +5,7 @@
 #pragma once
 
 // CMfcMenuDlg dialog
-class CMfcMenuDlg : public CDialogEx
+class CMfcMenuDlg : public CDialog
 {
 // Construction
 public:
@@ -30,6 +30,7 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	afx_msg void OnRButtonDown(UINT, CPoint);
+	virtual BOOL OnCommand(WPARAM wParam, LPARAM lParam);
 	afx_msg void OnDrawItem(int nIDCtl, LPDRAWITEMSTRUCT lpDrawItemStruct);
 	afx_msg void OnMeasureItem(int nIDCtl, LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 

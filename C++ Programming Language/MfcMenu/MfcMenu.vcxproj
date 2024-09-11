@@ -183,7 +183,6 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="ColoredMenu.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="MfcMenu.h" />
     <ClInclude Include="MfcMenuDlg.h" />
@@ -192,7 +191,6 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ColoredMenu.cpp" />
     <ClCompile Include="MfcMenu.cpp" />
     <ClCompile Include="MfcMenuDlg.cpp" />
     <ClCompile Include="pch.cpp">

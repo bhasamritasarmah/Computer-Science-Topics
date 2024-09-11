@@ -14,18 +14,18 @@
 
 
 CMfcMenuDlg::CMfcMenuDlg(CWnd* pParent /*=nullptr*/)
-	: CDialogEx(IDD_MFCMENU_DIALOG, pParent)
+	: CDialog(IDD_MFCMENU_DIALOG, pParent)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
 
 void CMfcMenuDlg::DoDataExchange(CDataExchange* pDX)
 {
-	CDialogEx::DoDataExchange(pDX);
+	CDialog::DoDataExchange(pDX);
 	DDX_Control(pDX, IDC_STATIC_TEXT, m_StaticText);
 }
 
-BEGIN_MESSAGE_MAP(CMfcMenuDlg, CDialogEx)
+BEGIN_MESSAGE_MAP(CMfcMenuDlg, CDialog)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
@@ -39,7 +39,7 @@ END_MESSAGE_MAP()
 
 BOOL CMfcMenuDlg::OnInitDialog()
 {
-	CDialogEx::OnInitDialog();
+	CDialog::OnInitDialog();
 
 	// Add "About..." menu item to system menu.
 
@@ -80,7 +80,7 @@ void CMfcMenuDlg::OnSysCommand(UINT nID, LPARAM lParam)
 	}
 	else
 	{
-		CDialogEx::OnSysCommand(nID, lParam);
+		CDialog::OnSysCommand(nID, lParam);
 	}
 }
 
@@ -109,7 +109,7 @@ void CMfcMenuDlg::OnPaint()
 	}
 	else
 	{
-		CDialogEx::OnPaint();
+		CDialog::OnPaint();
 	}
 }
 
@@ -142,7 +142,7 @@ void CMfcMenuDlg::OnRButtonDown(UINT nFlags, CPoint point)
 		if (pContextMenu != nullptr)
 		{
 			pContextMenu->ModifyMenu(ID_CIRCLE, MF_BYCOMMAND | MF_OWNERDRAW, ID_CIRCLE, _T("Circle"));
-			pContextMenu->ModifyMenu(ID_RECTANGLE, MF_POPUP | MF_OWNERDRAW, (UINT_PTR)pContextMenu->GetSubMenu(1)->m_hMenu, _T("Rectangle"));
+			pContextMenu->ModifyMenu(ID_RECTANGLE, MF_BYCOMMAND | MF_OWNERDRAW, ID_RECTANGLE, _T("Rectangle"));  // Treat "Rectangle" as a normal menu item
 			// Access submenu for "Rectangle"
 			CMenu* pSubMenu = pContextMenu->GetSubMenu(1);
 			if (pSubMenu != nullptr)
@@ -163,8 +163,35 @@ void CMfcMenuDlg::OnRButtonDown(UINT nFlags, CPoint point)
 	}
 
 	// Call the base class method to handle other right-click events
-	CDialogEx::OnRButtonDown(nFlags, point);
+	CDialog::OnRButtonDown(nFlags, point);
 }
+
+BOOL CMfcMenuDlg::OnCommand(WPARAM wParam, LPARAM lParam)
+{
+	if (LOWORD(wParam) == ID_RECTANGLE)
+	{
+		// Get the position of the mouse click to show the sub-menu
+		CPoint point;
+		GetCursorPos(&point); // Get the current mouse position
+
+		// Load the menu resource
+		CMenu menu;
+		menu.LoadMenu(IDR_MENU);  // Ensure this is the correct menu resource ID
+
+		// Get the sub-menu for "Rectangle"
+		CMenu* pSubMenu = menu.GetSubMenu(1); // Assuming "Rectangle" submenu is the second submenu (index 1)
+		if (pSubMenu != nullptr)
+		{
+			// Display the sub-menu at the current mouse position
+			pSubMenu->TrackPopupMenu(TPM_LEFTALIGN | TPM_RIGHTBUTTON, point.x, point.y, this);
+		}
+
+		return TRUE; // Handled the command
+	}
+
+	return CDialog::OnCommand(wParam, lParam); // Default handling for other commands
+}
+
 
 void CMfcMenuDlg::OnDrawItem(int nIDCtl, LPDRAWITEMSTRUCT lpDrawItemStruct)
 {
@@ -193,44 +220,40 @@ void CMfcMenuDlg::OnDrawItem(int nIDCtl, LPDRAWITEMSTRUCT lpDrawItemStruct)
 		dc.SetTextColor(crText);
 		dc.SetBkMode(TRANSPARENT); // Transparent background for text
 
-		// Check if it's the popup (i.e., "Rectangle")
-		if (lpDrawItemStruct->itemID == (UINT)-1)  // No ID means it's a popup
+		// Draw the text for regular menu items
+		CString strText;
+		switch (lpDrawItemStruct->itemID)
 		{
-			dc.DrawText(_T("Rectangle"), &lpDrawItemStruct->rcItem, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+		case ID_CIRCLE:
+			strText = _T("Circle");
+			break;
+		case ID_RECTANGLE:  // Handle Rectangle here
+			strText = _T("Rectangle");
+			break;
+		case ID_RECTANGLE_SQUARE:
+			strText = _T("Square");
+			break;
+		case ID_HEXAGON:
+			strText = _T("Hexagon");
+			break;
+		case ID_TRIANGLE:
+			strText = _T("Triangle");
+			break;
+		default:
+			strText = _T("");
 		}
-		else
-		{
-			// Draw the text for regular menu items
-			CString strText;
-			switch (lpDrawItemStruct->itemID)
-			{
-			case ID_CIRCLE:
-				strText = _T("Circle");
-				break;
-			case ID_RECTANGLE_SQUARE:
-				strText = _T("Square");
-				break;
-			case ID_HEXAGON:
-				strText = _T("Hexagon");
-				break;
-			case ID_TRIANGLE:
-				strText = _T("Triangle");
-				break;
-			default:
-				strText = _T("Rectangle");
-			}
 
-			// Draw the text centered in the menu item rectangle
-			dc.DrawText(strText, &lpDrawItemStruct->rcItem, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
-		}
+		// Draw the text centered in the menu item rectangle
+		dc.DrawText(strText, &lpDrawItemStruct->rcItem, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
 
 		dc.Detach(); // Detach the device context
 	}
 	else
 	{
-		CDialogEx::OnDrawItem(nIDCtl, lpDrawItemStruct); // Default handling for other controls
+		CDialog::OnDrawItem(nIDCtl, lpDrawItemStruct); // Default handling for other controls
 	}
 }
+
 
 
 void CMfcMenuDlg::OnMeasureItem(int nIDCtl, LPMEASUREITEMSTRUCT lpMeasureItemStruct)
@@ -250,7 +273,7 @@ void CMfcMenuDlg::OnMeasureItem(int nIDCtl, LPMEASUREITEMSTRUCT lpMeasureItemStr
 		case ID_CIRCLE:
 			strText = _T("Circle");
 			break;
-		case ID_RECTANGLE:
+		case ID_RECTANGLE:  // Handle Rectangle here
 			strText = _T("Rectangle");
 			break;
 		case ID_RECTANGLE_SQUARE:
@@ -279,6 +302,8 @@ void CMfcMenuDlg::OnMeasureItem(int nIDCtl, LPMEASUREITEMSTRUCT lpMeasureItemStr
 	}
 	else
 	{
-		CDialogEx::OnMeasureItem(nIDCtl, lpMeasureItemStruct); // Default handling for other controls
+		CDialog::OnMeasureItem(nIDCtl, lpMeasureItemStruct); // Default handling for other controls
 	}
 }
+
+

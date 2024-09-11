@@ -33,9 +33,6 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ColoredMenu.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MfcMenu.cpp">
@@ -45,9 +42,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ColoredMenu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -13,3 +13,6 @@ packages
 packages/
 x64
 x64/
+*.vcxproj
+*.vcxproj.*
+packages.config
