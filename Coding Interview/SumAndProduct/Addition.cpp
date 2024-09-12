@@ -1,6 +1,5 @@
 #include "pch.h"
 #include "Addition.h"
-#include <string>
 
 int Addition(vector<int> vec)
 {
