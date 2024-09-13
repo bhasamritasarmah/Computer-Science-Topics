@@ -174,3 +174,17 @@ Computer Science is a dynamic and ever-changing field. But like any other field,
 ## Online Resources Used
 
 **Udemy Course Name:** Visual C++ (2013 to 2022) and MFC from entry to mastery by Jim Green
+
+
+#Coding Interview
+
+## Books Used
+
+**Book Name:** Cracking the Coding Interview (6th edition) by Gayle Laakmann McDowell
+
+**Book Format:** PDF Format; included in this repository
+
+**Book Length:** 712 pages
+
+**Estimated Completion Date:** August 2025 (At the rate of 3 pages per day)
+
